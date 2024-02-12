@@ -2,8 +2,11 @@
 
 @section('content')
 <section id="description" class="py-5">
+    <div class="box-image">
+        <img src="{{ $comic['thumb'] }}">
+    </div>
     <div class="container">
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-8 p-0">
                 <h3>{{ $comic['title'] }}</h3>
             </div>
@@ -85,19 +88,29 @@
 @endsection
 
 <style>
-
     #description{
+        position: relative;
         .row{
             width: 90%;
             margin : 0 auto;
-
+            
+            
             .available-col{
                 background-color: greenyellow;
             }
-
+            
             .offset-1{
                 border-left: 1px solid black
             }
+        }
+    }
+    .box-image{
+        position: absolute;
+        left: 9%;
+        bottom: 90%;
+        width: 100px;
+        img{
+            width:  200px;
         }
     }
     #info{

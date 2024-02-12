@@ -167,7 +167,7 @@
         padding: 0;
         li{
             h2{
-                font-size: 22px;
+                font-size: 18px;
                 color: #fff;
                 text-transform: uppercase;
             }
